@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 62px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>{{title}}</title>
+		
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'app/css/index.min.css' %}">
+	
+	
+</head>
+<body class="article_body" style="background-image: url({% static 'app/photo/background.jpg'%});">
+<main class="page_main fl_padding" style="min-height: 442px;">
+<section class="j_main_art">
+
+<!--header_s-->
+<header class="hd_s1">
+
+	<h2 class="hd_tit_l">
+				<a class="hd_tit_a" title="英超新闻">英超新闻</a>
+					
+	
+</header>
+
+<section class="s_card z_c1">
+	<!--正文_ss-->
+	<article class="art_box">
+
+		<!--标题_s-->
+		<h1 class="art_tit_h1">{{title}}</h1>		
+		
+							<section>
+			<figure class="weibo_info look_info" data-uid="2810373291" data-key="732d248af741a9989bc59bc00ec013fb" data-time="1567688839">
+				<em class="">
+					</em>
+				<figcaption class="weibo_detail no_audio">
+					<h2 class="weibo_user">{{fromwhere}}</h2>
+					<time class="weibo_time">
+						时间{{time}}</time>
+					
+				</figcaption>
+			</figure>
+		</section>
+
+<section class="art_pic_card art_content">
+
+<p class="art_p">{{text|safe}}</p>
+
+	<!--正文_e-->
+
+
+
+</section>
+</section>
+
+
+
+
+
+</html>

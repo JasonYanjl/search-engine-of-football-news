@@ -1,0 +1,171 @@
+﻿/* CSS reset */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend,img{margin:0;padding:0;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul,ol{list-style:none;}
+input {padding-top:0; padding-bottom:0;}
+input::-moz-focus-inner{ border:none; padding:0;}
+select,input{vertical-align:middle;}
+select,input,textarea{font-size:12px;margin:0;}
+input[type="text"], input[type="password"], textarea {outline-style:none; -webkit-appearance:none; }
+textarea {resize:none; }
+table{border-collapse:collapse;}
+body{background:#fff; color:#333;min-width:1000px;padding:0;font:12px/20px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1","Simsun","\5B8B\4F53";}
+
+.clearfix:after{content:".";display:block;height:0;visibility:hidden;clear:both;}
+.clearfix{zoom:1;}
+.clearit{clear:both;height:0;font-size:0;overflow:hidden;}
+
+a{color:#313131;text-decoration:none;}
+a:visited{color:#313131;}
+a:hover, a:active, a:focus{color:#313131;text-decoration:none;}
+.banner{padding:15px 0; overflow:hidden;}
+h1, h2, h3, h4, h5, em{font-weight:normal; }
+.space{ height:20px; overflow:hidden; background:#fff; clear:both}
+.wrap{width:1000px; background:#fff;margin:0 auto; }
+.banner{padding:15px 0; overflow:hidden;}
+/* top nav */
+.secondaryHeader{height: 39px;background:#fff;color:#000;font-size:12px;font-weight:100; border-bottom:solid 1px #e5e5e5;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{ width:1000px; margin:0 auto;}
+.sHLogo{float:left;height: 39px;line-height: 39px;overflow:hidden;background: #fff;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:32px;*font-family:Arial;height:36px;}
+.sHLogo span,.sHLogo span a img,.sHLogo span a:link img,.sHLogo span a:visited img,.sHLogo span a:hover img{vertical-align:middle;}
+.sHLinks{float:right;line-height: 39px;}.secondaryHeader img{border:none;}
+.sina-top-bar-user{float:right;margin: 0 10px 0 0;}
+
+/*header*/
+.header{height:50px;line-height:50px;width:1000px;overflow:hidden;margin:0 auto;position:relative;border-bottom:1px solid #313131;}
+.header ul{margin-bottom:-1px;}
+.header li{float:left;padding:0 16px;}
+.header .home{margin-left:64px;_margin-left:64px;}
+.header li a{color:#a0a0a0;font-size:20px;}
+.header .select,.header li:hover{background:#f74c5f;}
+.header .select a,.header li:hover a{color:#fff;}
+
+/*main*/
+.mainTop{width:1000px;height:52px;line-height:52px;overflow:hidden;text-align:center;padding:10px 0;border-bottom:1px solid #313131;}
+.mainTop h3{font-size:20px;color:#313131;float:left;margin-right:10px;margin-left:340px;_margin-left:170px;}
+.mainTop .tag{background:url(http://n.sinaimg.cn/sports/csl/tag.jpg) no-repeat;width:36px;height:42px;float:left;}
+#sinashareto{width:50px;height:52px;text-align:center;line-height:52px;float:right;}
+.wrap .bshare-custom.icon-medium a.bshare-more.more-style-addthis{ border-radius:6px;-moz-border-radius:6px; /* Old Firefox */display:block;background:#f74c5f; width:50px;height:52px; text-align:center; line-height:52px; color: #fff !important; font-size:20px; padding: 0 !important;}
+.wrap .bshare-custom.icon-medium a.bshare-more.more-style-addthis:hover{text-decoration:none}
+
+.mainLeft{width:184px;position:relative;margin-top:46px;float:left;}
+.mainLeft .team_tag_unit{width:120px;height:40px;line-height:40px;text-align:center;border:1px solid #a5a5a5;margin-bottom:10px;font-size:20px;color:#313131;}
+.mainLeft .selected,.mainLeft .team_tag_unit:hover{background:#f74c5f;color:#fff;cursor:pointer;}
+
+.selectDate {background:url(http://n.sinaimg.cn/sports/csl/bg2.jpg) no-repeat;width:169px;margin-top:50px;}
+.mainLeft .selectDate{height:90px;}
+.selectDate a{font-size:16px;}
+.selectDate:hover{cursor:pointer;}
+.selectDate {font-size:14px;}
+.selectDate .first{width:136px;height:26px;line-height:26px;padding-left:9px;font-size:16px;}
+.selectDate ul {width:131px;background:#eeeeee;border:1px solid #f4f4f4;display:none;}
+.selectDate ul li{height:26px;padding-left:8px;line-height:26px;background:#eeeeee;border-bottom:1px solid #f4f4f4;}
+.selectDate ul li:hover{background:#f74c5f;}
+.selectDate1 ul{display:block;}
+
+.mainRight{width:816px;overflow:hidden;float:left;}
+.width0{width:80px;}
+.width1{width:158px;}
+.width2{width:188px;}
+.width3{width:80px;}
+.width4{width:50px;}
+.width5{width:100px;}
+.width6{width:80px;}
+.width7{width:80px;}
+
+.mainRight {}
+.mainRight .title{float:left;width:1000px;height:40px;line-height:40px;overflow:hidden;}
+.data_table{width:1000px;overflow:hidden;}
+.data_table img{vertical-align:middle;width:30px;height:30px;margin-right:5px;}
+.data_table .width0 {font-size:18px;}
+.data_table .width1{text-align:left;}
+.mainRight span,.data_table span{float:left;height:40px;line-height:40px;overflow:hidden;font-size:16px;text-align:center;}
+.data_table p{float:left;width:1000px;height:40px;line-height:40px;overflow:hidden;border-top:1px solid #eee;}
+.data_table p:hover{background:#f74c5f;}
+
+
+/*积分页*/
+.w0{width: 95px;}
+.w1{width: 116px;}
+.w2{width:105px;}
+.w3{width:92px;}
+.w4{width:96px;}
+.w5{width:86px;}
+.w6{width:99px;}
+.w7{width:94px;}
+.w8{width:107px;}
+.w9{width: 107px;}
+
+.title2{float:left;width:1000px;height:49px;line-height:49px;overflow:hidden;}
+.title2 li{float:left;height:49px;line-height:49px;text-align:center;font-size:16px;position:relative;}
+.title2 li span{margin-right:4px;}
+.title2 li i{display:inline;position:absolute;width:25px;height:25px;top: 12px;background:url(http://i3.sinaimg.cn/ty/2014csl/sports_0725_bg_08.png) no-repeat -60px 0;cursor:pointer;}
+.title2 li i.curr{ background-position:-30px 0;}
+.title2 li i.hover{ background-position:-30px 0;}
+.data_table p  em{ width:24px; height:24px; line-height:24px; text-align:center; display:inline-block; font-style:normal; border-radius:12px;}
+.data_table p  em.first{ background:#f74c5f; color:#fff;}
+.data_table p  em.second{ background:#f98390; color:#fff;}
+.data_table p  em.last{ background:#c32c4c; color:#fff;}
+
+.shareBot{width:1000px;height:52px;line-height:52px;background:#eee;margin-top:20px;overflow:hidden;font-size:16px;float:left;}
+.shareBot p{float:left;margin-left:40px;_margin-left:20px;}
+
+.info{margin-top:20px;float:left;width:1000px;overflow:hidden;position:relative;}
+.info h2{ font-size:20px; line-height:40px; font-weight:bold}
+.info ul{padding: 10px 0 20px;}
+.info li{ font-size:14px; line-height:24px;}
+.info_jifen{ border-top:solid 1px #ededed; line-height:24px; font-size:14px; padding:20px 0 0}
+.info_jifen dt{ font-weight:bold}
+
+/*射手页*/
+/*.w20{width:111px;}
+.wrap .w21{width:220px;margin-left:74px;_margin-left:37px;text-align:left;}
+.w22{width:104px;}
+.wrap .w23{width:120px;margin-left:116px;_margin-left:58px;text-align:left;}
+.scorers .title2{width:776px;margin:0 auto;margin-left:112px;_margin-left:56px;border-top:1px solid #313131;}
+.scorers .data_table{width:776px;margin:0 auto;}
+.scorers .mainTop{border-bottom:none;}
+.scorers .shareBot{background:none;}
+.scorers .shareBot p{width:746px;padding-left:30px;background:#eee;margin-left:112px;_margin-left:56px;position:relative;}*/
+.w20{width:111px;}
+.wrap .w21{width:350px;padding-left:126px;text-align:left;}
+.w22{width:104px;}
+.wrap .w23{width:162px;padding-left:117px;text-align:left;}
+
+
+/*赛程页*/
+.navCtr{font-size:20px;text-align:center;margin-top:16px;}
+.navCtr span{border-radius:4px;-moz-border-radius:4px;}
+.navCtr .navTitle{float:left;height:96px;line-height:96px;width:50px;overflow:hidden;margin-right:14px;}
+.navCtr .navTitle span{display:inline-block;width:50px;height:50px;line-height:50px;background:#f74c5f;color:#fff;}
+.navCtr .navList{float:left;height:96px;width:936px;overflow:hidden;}
+.navCtr .navList div{margin-right:-24px;height:96px;}
+.navCtr .navList span{float:left;width:40px;height:40px;line-height:40px;overflow:hidden;background:#e5e5e5;margin-right:24px;margin-bottom:16px;}
+.navCtr .navList .cur,.navCtr .navList span:hover{cursor:pointer;background:#f74c5f;color:#fff;}
+
+.roundCtr{margin-top:20px;width:1000px;height:550px;overflow:hidden;position:relative;}
+.roundCtr .current{width:112px;height:64px;position:relative;line-height:50px;color:#fff;font-size:20px;background:url(http://n.sinaimg.cn/sports/csl/current.jpg) no-repeat;text-align:center;}
+.roundCtr .roundCon{height:480px;margin-right:-48px;}
+.roundCtr .cbox{float:left;width:212px;height:214px;overflow:hidden;border:1px solid #eee;text-align:center;margin-right:48px;margin-bottom:48px;}
+.cbox .time{font-size:18px;color:#999;}
+.cbox .team{margin-left:10px;_margin-left:5px;margin-bottom:10px;}
+.cbox .team img{width:34px;height:40px;float:left;}
+.cbox .team span{float:left;width:134px;font-size:20px;overflow:hidden;}
+.cbox .team em{width:34px;height:40px;overflow:hidden;float:left;font-style:normal;font-size:30px;color:#f74c5f;}
+.cbox .cboxUp{border-bottom:1px solid #eee;}
+.cbox .cboxUp p{height:44px;line-height:44px;overflow:hidden;}
+.cbox .cboxDown p{line-height:28px;}
+.cbox .cboxDown a,.cbox .cboxDown span{margin-right:10px;font-size:16px;}
+.cbox .cboxDown span{color:#808080;}
+
+/* footer */
+.footer {width: 100%;margin: 50px auto 0 auto;border-top: 2px solid #c7c7c7;padding: 20px 0;font: 400 12px/24px "simsun", "\5B8B\4F53";text-align: center;}
+.footer a:link {color: #000;}
+.footer a:hover,
+.footer a:focus,
+.footer a:active {color: #c00;text-decoration: underline;}
+.footer a:visited {color: #666;}

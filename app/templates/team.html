@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="{% static 'app/css/common.css' %}" rel="stylesheet" type="text/css">
+<title>{{title}}</title>
+
+<link type="text/css" rel="stylesheet" href="{% static 'app/css/common-v1.css' %}">
+<link type="text/css" rel="stylesheet" href="{% static 'app/css/threeNav.css' %}">
+<link href="{% static 'app/css/team_index-v1.css' %}" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<!--导航 start-->
+
+	<div class="hp-threeNav">
+		<div class="hp-threeNav-bd">
+			<ul class="hp-threeNav-item">
+				<li><a class="on" title="英超">球队首页</a></li>
+             
+             </ul>
+		</div>
+    
+		
+	</div>
+
+<div class="wrap scorers clearfix ">
+   <div class="mainTop">
+	   <span class="tag"></span>
+	  
+   </div>
+
+<div class="main">
+  <div class="">
+      <!--球队信息 begin-->
+	<div class="">
+      <h3><span>{{title}}</span></h3>
+      
+      <div class="clearfix"></div>
+      <ul>
+			{% for message in messagelist %}
+				<li>{{message.message}}</li>
+			{% endfor %}
+      </ul>
+     </div>
+      <!--球队信息 end-->
+      <!--球队新闻 begin--->
+       
+      
+      
+    
+	<div class=" clearfix"></div>
+    <!---阿森纳阵容与数据 begin-->
+    <h3><span class=" left f074">{{title}}阵容</span></h3>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="team_player" style="margin-bottom: 8px;">
+	  <tbody>
+	  <tr class="tp_bg">
+	    <th>中文名</th>
+	  </tr>
+	  {% for player in playerlist %}
+	  <tr>
+			<td>{{player.player}}</td>
+      </tr>
+	  {% endfor %}
+	  </tbody>
+	</table>
+	<div class="">
+        <h3><span class="">{{title}}相关新闻</span></h3>
+		<ul>
+			{% for news in newslist %}
+			<h2>
+			<li class="gray_icon">&nbsp;
+				<a href="/app/news{{news.link}}" target="_blank">			
+					{{news.title}}
+				</a>
+			</li>
+			</h2>
+			{% endfor %}		
+		</ul>
+    </div>
+	<div class="row">
+				<br>
+    			<!span class="step-links">
+					<label style="width:12%"></label>
+					<label style="width:33%">
+        			{% if newslist.has_previous %}
+            			<a href="?page={{ newslist.previous_page_number }}">上一页</a>
+	        		{% endif %}
+					</label>
+					<label style="width:33%">
+    	    		<span class="current">
+        	    		<font size="3" color="white">Page {{ newslist.number }} of {{ newslist.paginator.num_pages }}.</font>
+        			</span>
+					</label>
+					<label style="width:18%">
+	        		{% if newslist.has_next %}
+    	        		<a href="?page={{ newslist.next_page_number }}">下一页</a>
+        			{% endif %}
+					</label>
+    			<!/span>
+			</div>
+  </div>
+</div>
+ </div>
+</body></html>

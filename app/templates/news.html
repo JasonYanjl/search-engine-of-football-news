@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>{{ title }}</title>
+
+
+
+</head>
+
+<body>
+<!-- cms统一排版 -->
+<link href="{% static 'app/css/article-xili.css' %}" rel="stylesheet">
+
+<!-- main content start -->
+
+<div class="main-content w1240">
+	<h1 class="main-title">{{ title }}</h1>
+	<!-- page-tools start -->
+	<style type="text/css">
+	.top-bar-inner .second-title{font-size: 18px;width: 600px;}
+	@media screen and (min-width:768px) and (max-width:1480px){
+		.top-bar-inner .second-title{width: 400px;}
+	}
+</style>
+
+	<!-- page-tools end -->
+	<!-- 正文 start -->
+
+	<div class="article-content clearfix article-18" id="article_content">
+		<!-- 左侧 start -->
+		<div class="article-content">
+						<!-- 引文 start -->
+			
+			<!-- 引文 end -->
+			<!-- 正文 start -->
+			<div class="article" id="article">
+							
+<font size="2">	<p>		{{fromwhere}}</p></font>
+<font size="2">	<p>		时间{{time}}</p></font>
+<p>　　{{text|safe}}</p>
+
+				
+				
+				
+			</div>
+			<!-- 正文 end -->
+			<!-- 文章关键字 begin -->
+			
+			<!-- 文章关键字 end -->
+			
+					</div>
+		<!-- 左侧 end -->
+			</div>
+	<!-- 正文 end -->
+
+</div>
+</body>
+</html>

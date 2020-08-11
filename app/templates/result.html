@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<title>搜索</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'app/css/bootstrap.min.css' %}" />
+		<style type="text/css">
+    	</style>
+	</head>
+	<body style="background-image: url({% static 'app/photo/background3.jpg'%});">
+		<div class="container" style="width:80%;background: #F0FFFF">
+			<form class="form" role="form" action="{% url 'app:search' %}" method="get">
+				<br>
+				<br>
+				<input type="text" class="form-control" name="text" style="width:100%;border-radius:10px" id="name" value="{{ text }}">
+				<br>
+				<label style="width:2%"></label>
+				<button type="submit" style="width:15%;border-radius:10px" class="btn btn-default" >搜索</button>
+			</form>
+			<div class="row">
+				<br>
+				<table>
+				<label style="width:2%"></label>
+				<tr><td><label><font size="2" color="#4682B4">查询时间{{ time }}秒</font></label></td></tr>
+				<tr><td><p>{{"   "}}</p></td></tr>
+				<tr><td><label><font size="3">共有{{ num }}条结果，当前位于第{{ uselesslist.number }}页，共有{{ uselesslist.paginator.num_pages }}页。</font></label></td></tr>
+				</table>
+				<br>
+				<br>
+			</div>
+			<div>
+				<ul>
+					{% for article in newslist %}
+    				<li>
+						<p><font face="Microsoft YaHei" size="4">
+						<a href="/app/news{{article.url}}" >{{ article.title|safe }}</a>
+						</font></p>
+	        			<p><font face = "Microsoft JhengHei" size="3">{{ article.text|safe }}</font></p>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="row">
+				<br>
+    			<!span class="step-links">
+					<label style="width:12%"></label>
+					<label style="width:33%">
+        			{% if uselesslist.has_previous %}
+            			<a href="?page={{ uselesslist.previous_page_number }}">上一页</a>
+	        		{% endif %}
+					</label>
+					<label style="width:40%">
+	        		{% if uselesslist.has_next %}
+    	        		<a href="?page={{ uselesslist.next_page_number }}">下一页</a>
+        			{% endif %}
+					</label>
+    			<!/span>
+			</div>
+			<br>
+			<br>
+		</div>
+	</body>
+</html>

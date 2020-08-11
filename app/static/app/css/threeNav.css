@@ -1,0 +1,16 @@
+﻿@charset "utf-8";
+/*
+*@Description:common css 
+*@Author: DaHai.Jin
+*@Update: DaHai.Jin(2012-11-12 17:00)
+*/
+.hp-threeNav{width:980px;margin-left:auto;margin-right:auto;height:31px;margin-bottom:10px;border-bottom:4px solid #a92229}
+.hp-threeNav-bd{float:left;line-height:30px;border:1px solid #ebeff1;border-bottom:none;margin-left:3px;_display:inline;_zoom:1;} 
+.hp-threeNav-bd li{float:left;height:30px;z-index:2;}
+.hp-threeNav-bd li a,.hp-threeNav-bd li a:hover,.hp-threeNav-bd li a:active{display:inline-block;height:100%;padding:0 14px;background-color:#ebeff1;background:-webkit-gradient(linear,0 0,0 bottom,from(#fff),to(#ebeff1));background:-moz-linear-gradient(top,#fff,#ebeff1);background:-o-linear-gradient(top,#fff,#ebeff1);background:url(//w3.hoopchina.com.cn/newThreeNav/images/threeNav_bg.png) repeat-x 0 0 \9;color:#444;}
+.hp-threeNav-bd li a:hover{background:#fff;text-decoration:none;}
+.hp-threeNav-bd .hp-threeNav-subNav{border-color:#EBEFF1;border-top:0 none;width:130px;left:0px;top:30px;}
+.hp-threeNav-bd .hp-threeNav-subNav a,.hp-threeNav-bd .hp-threeNav-subNav a:active{background:#fff;display:block;float:none;}
+.hp-threeNav-bd .hp-dropDownMenu a.hp-setH{background:#fff;}
+.hp-threeNav-bd .hp-threeNav-item a.on,.hp-threeNav-bd .hp-threeNav-item a.on:hover,.hp-threeNav-bd .hp-threeNav-item a.on:active{background:#a92229;border-color:#a92229;color:#fff;}
+.hp-threeNav-bd .hp-threeNav-subNav a:hover{color:#a41f24;text-decoration:underline;background:none;}
